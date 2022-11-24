@@ -19,10 +19,15 @@ async function getBTCprice() {
 // }
 // console.log(txt);
 
-let myString = JSON.stringify(obj);
-console.log(myString);
+// let myString = JSON.stringify(obj);
+// console.log(myString);
 //  console.log(obj);
 
+
+console.log(Object.keys(obj));
+console.log(obj['0']);
+console.log(obj["1"]);
+console.log(obj['1121']);
 
 }
 
