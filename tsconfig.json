@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "outDir": "./built",
+      "allowJs": true,
+      "target": "es2021" //którą wersję użyć?
+    },
+    "include": ["./src/**/*", "./node_modules/**/*"] //bez drugiego argumentu?
+  }
