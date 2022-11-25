@@ -34,7 +34,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var axios = require('axios');
+var axios = Promise.resolve().then(function () { return require('axios'); });
+// var axios = Promise.resolve(import('axios')).then(function () { return import('axios'); });
 function getBTCprice() {
     return __awaiter(this, void 0, void 0, function () {
         var res, obj;

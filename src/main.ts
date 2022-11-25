@@ -1,6 +1,6 @@
-const axios = require('axios');
+const axios = import('axios');
 
-async function getBTCprice(): Promise<void> {
+async function getBTCprice() {
 
   let res = await axios.get('https://api.coingecko.com/api/v3/coins/bitcoin');
   let obj= res.data.market_data.current_price.usd; 

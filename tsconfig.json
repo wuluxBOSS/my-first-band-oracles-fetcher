@@ -2,7 +2,8 @@
     "compilerOptions": {
       "outDir": "./built",
       "allowJs": true,
-      "target": "es2021" //którą wersję użyć?
+      "target": "ES5", //którą wersję użyć?
+      "lib": ["es2015", "dom"]
     },
-    "include": ["./src/**/*", "./node_modules/**/*"] //bez drugiego argumentu?
+    "include": ["./src/**/*"] //, "./node_modules/**/*"bez drugiego argumentu?
   }
