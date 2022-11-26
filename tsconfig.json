@@ -3,7 +3,7 @@
       "outDir": "./built",
       "allowJs": true,
       "target": "ES5", //którą wersję użyć?
-      "lib": ["es2015", "dom"] //czy to konieczne?
+      // "lib": ["es2015", "dom"] //czy to konieczne?
     },
     "include": ["./src/**/*"] //, "czy dodawać coś jeszcze np: ./node_modules/**/*"?
   }
