@@ -66,7 +66,7 @@ To do:
 
 
 ## Acknowledgements
-- This project was inspired by @hatskier - RedStone
+- This project was inspired by [@hatskier](https://github.com/hatskier) & [RedStone Finance](https://github.com/redstone-finance)
 - This project was based on: 
 - [Main tutorial](https://github.com/redstone-finance/redstone-oracles-monorepo/issues/140)
 - [Nodejs basic](https://nodejs.dev/en/learn/)
@@ -80,4 +80,4 @@ To do:
 
 
 ## Contact
-Created by @wuluxBOSS - feel free to contact me!
+Created by [@wuluxBOSS](https://github.com/wuluxBOSS) - feel free to contact me!
