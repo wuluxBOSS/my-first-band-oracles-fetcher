@@ -33,19 +33,19 @@ List the ready features here:
 
 
 ## Setup
-Download missing components:
-npm install -g npm
-sudo npm install -g yarn.
-npm install -g typescript
-sudo  apt-get install nodejs=16.18.1
-npm init -y
-npm i axios@1.2.0-alpha.1
+> Download missing components:
+> npm install -g npm
+> sudo npm install -g yarn.
+> npm install -g typescript
+> sudo  apt-get install nodejs=16.18.1
+> npm init -y
+> npm i axios@1.2.0-alpha.1
 
-Compare installed versions:
-node -v
-npm -v
-tsc -v
-npm list -g
+> Compare installed versions:
+> node -v
+> npm -v
+> tsc -v
+> npm list -g
 
 
 ## Usage
