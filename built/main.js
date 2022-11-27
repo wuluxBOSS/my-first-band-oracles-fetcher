@@ -39,29 +39,48 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 function getBTCprice() {
     return __awaiter(this, void 0, void 0, function () {
-        var res, error_1;
+        var response, obj, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 2, , 3]);
                     return [4 /*yield*/, axios_1.default.get('https://api.coingecko.com/api/v3/coins/bitcoin')];
                 case 1:
-                    res = _a.sent();
-                    // let obj= res.data.market_data.current_price.usd; 
-                    // console.log(`BTC price in USD: ${obj}`);
-                    console.log(res);
-                    return [2 /*return*/, res];
+                    response = _a.sent();
+                    obj = response.data.market_data.current_price.usd;
+                    console.log(obj);
+                    return [3 /*break*/, 3];
                 case 2:
                     error_1 = _a.sent();
-                    // if (axios.isAxiosError(error)) {
-                    //   console.log('error message: ', error.message);
-                    //   return error.message;
-                    // } else {
-                    console.log('unexpected error: ', error_1);
-                    return [2 /*return*/, 'An unexpected error occurred'];
+                    console.error(error_1);
+                    return [3 /*break*/, 3];
                 case 3: return [2 /*return*/];
             }
         });
     });
 }
 getBTCprice();
+// import axios from 'axios';
+// async function doRequests(urls) {
+//     const fetchUrl = (url) => axios.get(url);
+//     const promises = urls.map(fetchUrl);
+//     let responses = await Promise.all(promises);
+//     responses.forEach(resp => {
+//         let msg = `${resp.config.url} -> ${resp.headers.server}: ${resp.status}`;
+//         console.log(msg);
+//     });
+// }
+// let urls = [
+//     'http://webcode.me',
+//     'https://example.com',
+//     'http://httpbin.org',
+//     'https://clojure.org',
+//     'https://fsharp.org',
+//     'https://symfony.com',
+//     'https://www.perl.org',
+//     'https://www.php.net',
+//     'https://www.python.org',
+//     'https://code.visualstudio.com',
+//     'https://github.com'
+// ];
+// doRequests(urls);

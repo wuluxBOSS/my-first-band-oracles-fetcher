@@ -1,24 +1,57 @@
 import axios from 'axios';
 
 async function getBTCprice() {
-  try {
+
+    try {
     //musze podać typ zwracanego obiektu, nie wiem czym dokładnie jest ale wiem, że będę
     //chciał użyc tylko data.market_data.current_price.usd, gdy dam typ generyczny to nie będę się
-    //w stanie odwołać.. mogę ręcznie ale obiekt jest ogromny i nie znam typów, zajęłoby kilka h! 
-    const  res = await axios.get<any>('https://api.coingecko.com/api/v3/coins/bitcoin');
-    let obj= res.data.market_data.current_price.usd; //NIE ZADZIAŁA!
-    // console.log(`BTC price in USD: ${obj}`);
-    console.log(res);
-    return res;
-  } catch (error) {
-    // if (axios.isAxiosError(error)) {
-    //   console.log('error message: ', error.message);
-    //   return error.message;
-    // } else {
-      console.log('unexpected error: ', error);
-      return 'An unexpected error occurred';
-    // }
-  }
+  //w stanie odwołać.. mogę ręcznie ale obiekt jest ogromny i nie znam typów, zajęłoby kilka h! 
+      const response = await axios.get('https://api.coingecko.com/api/v3/coins/bitcoin');
+      let obj= response.data.market_data.current_price.usd!; //NIE ZADZIAŁA!
+      console.log(obj);
+    } catch (error) {
+      console.error(error);
+    }
+
+
+
+
+
+
+
+      // let res = await axios.get('https://api.coingecko.com/api/v3/coins/bitcoin');
+  // let obj= res.data.market_data.current_price.usd; 
+  // console.log(`BTC price in USD: ${obj}`);
+
+  // await axios.get('https://api.coingecko.com/api/v3/coins/bitcoin').
+  //   then(function(response)){
+  //     console.log(response.data.market_data.current_price.usd)
+  //   }
+  // let obj= res.data.market_data.current_price.usd; //NIE ZADZIAŁA!
+  // // console.log(`BTC price in USD: ${obj}`);
+
+
+  // try {
+  //   //musze podać typ zwracanego obiektu, nie wiem czym dokładnie jest ale wiem, że będę
+  //   //chciał użyc tylko data.market_data.current_price.usd, gdy dam typ generyczny to nie będę się
+  //   //w stanie odwołać.. mogę ręcznie ale obiekt jest ogromny i nie znam typów, zajęłoby kilka h! 
+  //   const  res = await axios.get('https://api.coingecko.com/api/v3/coins/bitcoin');
+  //   let obj= res.data.market_data.current_price.usd; //NIE ZADZIAŁA!
+  //   // console.log(`BTC price in USD: ${obj}`);
+  //   console.log(res);
+  //   return res;
+  // } catch (error) {
+  //   // if (axios.isAxiosError(error)) {
+  //   //   console.log('error message: ', error.message);
+  //   //   return error.message;
+  //   // } else {
+  //     console.log('unexpected error: ', error);
+  //     return 'An unexpected error occurred';
+  //   // }
+  // }
+
+
+
   // let res = await axios.get('https://api.coingecko.com/api/v3/coins/bitcoin');
   // let obj= res.data.market_data.current_price.usd; 
   // console.log(`BTC price in USD: ${obj}`)
