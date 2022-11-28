@@ -28,8 +28,7 @@
 
 
 ## Features
-List the ready features here:
-- Fetching BTC price in USD from coingeco
+- Fetching pricing data for the following assets: ETH, AAVE, BTC, UNI.
 
 
 ## Setup
@@ -56,13 +55,11 @@ To see current BTC price open folder with READ.md and run following commands:
 
 
 ## Project Status
-Project is: _in progress_ (adding more assets)
+Project is: _waiting for review_ 
 
 
 ## Room for Improvement
-To do:
-- Find the most convinient way to fetch pricing data for the following assets: ETH, AAVE, BTC, UNI
-- Update a node.js typescript script that will fetch the data and print the result in a JSON format
+- review awaiting
 
 
 ## Acknowledgements
