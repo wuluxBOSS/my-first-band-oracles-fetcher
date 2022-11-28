@@ -9,7 +9,7 @@ async function getBTCprice() {
       const response = await axios.get("https://laozi1.bandchain.org/api/oracle/v1/request_prices?symbols=BTC&symbols=ETH&symbols=AAVE&symbols=UNI");
       const obj = response.data.price_results;
        
-      // Types are usyally declared in the beginning of the file, under the imports
+      // Types are usually declared in the beginning of the file, under the imports
       type Crypto = {
         symbol: string;
         price: number;
