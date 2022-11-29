@@ -4,7 +4,9 @@
       "allowJs": true,
       "removeComments": true,
       "strict": true,
-      "target": "ES5",
+      "target": "es2021",
+      "module": "CommonJS",
+      "moduleResolution": "node",
       "lib": ["es2015", "dom"] 
     },
     "include": ["./src/**/*"]
