@@ -13,10 +13,10 @@ async function printCryptoPrices() {
   try {
     const response = await axios.get(`${BAND_ORACLE_API_URL}?symbols=${requestCurriences}`);
    
-    const obj = response.data.price_results;
+    const fetchedData = response.data.price_results;
     const cryptocurriences: Crypto[]= [];
     
-    obj.forEach((asset: { symbol: string; px: number; multiplier: number; })=>{
+    fetchedData.forEach((asset: { symbol: string; px: number; multiplier: number; })=>{
       const assetPrice: Crypto ={
         symbol: asset.symbol,
         price: asset.px/asset.multiplier,

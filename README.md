@@ -55,11 +55,11 @@ To see current BTC price open folder with READ.md and run following commands:
 
 
 ## Project Status
-Project is: _waiting for review_ 
+Project is: _finished_ 
 
 
 ## Room for Improvement
-- review awaiting
+- new version in the future?
 
 
 ## Acknowledgements
